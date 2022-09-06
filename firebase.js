@@ -1,12 +1,12 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyBzUcU8IMRQhFFTlFEVHAwtAUAqjlKXr4g",
-    authDomain: "termometer-projekt-basgrupp3.firebaseapp.com",
-    databaseURL: "https://termometer-projekt-basgrupp3.firebaseio.com",
-    projectId: "termometer-projekt-basgrupp3",
-    storageBucket: "termometer-projekt-basgrupp3.appspot.com",
-    messagingSenderId: "1001291187643",
-    appId: "1:1001291187643:web:c33ab3c35ea52a986df09e",
-    measurementId: "G-CT10FT60Q7",
-     };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+const firebaseConfig = {
+    apiKey: "AIzaSyC2n4ZiBshck1wldU11WrIetNsGdp39XAQ",
+    authDomain: "tradgard-18395.firebaseapp.com",
+    databaseURL: "https://tradgard-18395-default-rtdb.firebaseio.com/",
+    projectId: "tradgard-18395",
+    storageBucket: "tradgard-18395.appspot.com",
+    messagingSenderId: "648220676323",
+    appId: "1:648220676323:web:4d8109f3d8d975223cb5d6",
+    measurementId: "G-J76TPXBPL8"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);

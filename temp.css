@@ -1,4 +1,5 @@
 /*Bakrundbild*/
+
 body {
     padding: 0;
     margin: 0;
@@ -7,7 +8,9 @@ body {
     background-attachment: fixed;
 }
 
+
 /*menyn för alla rum*/
+
 .menu-klass {
     background-color: rgba(131, 110, 72, 0.9);
     height: 3vw;
@@ -45,12 +48,13 @@ body {
     height: 3vw;
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
-    padding-left: 3vw;
+    padding-left: 35vw;
 }
 
+
 /*stilar för text i menyn*/
+
 a {
-    
     text-decoration: none;
     color: white;
     text-shadow: 0.05vw 0.05vw 0.05vw gray;
@@ -63,23 +67,26 @@ a {
 
 a:hover {
     color: gray;
-    
 }
+
 
 /*stilar för rubriker i boxen*/
-h1{
+
+h1 {
     text-align: center;
-    
 }
 
+
 /*stilar för värdena i boxen*/
-p{
+
+p {
     font-size: 1.5vw;
     font-family: times;
 }
 
 
 /*stilar för boxen för varje rum*/
+
 .white-box-ter {
     background-color: rgba(84, 173, 89, 0.86);
     margin-left: auto;
@@ -99,13 +106,13 @@ p{
     height: 28vw;
     width: 28vw;
     border-radius: 5vw;
-    border:  rgb(131, 110, 72) solid 0.5vw;
+    border: rgb(131, 110, 72) solid 0.5vw;
     margin-top: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .white-box-vard {
-    background-color:rgba(255, 255, 255, 0.705);
+    background-color: rgba(255, 255, 255, 0.705);
     margin-left: auto;
     margin-right: auto;
     height: 28vw;
@@ -117,7 +124,7 @@ p{
 }
 
 .white-box-bibl {
-    background-color:rgba(255, 145, 56, 0.733);
+    background-color: rgba(255, 145, 56, 0.733);
     margin-left: auto;
     margin-right: auto;
     height: 28vw;
@@ -129,45 +136,30 @@ p{
 }
 
 .white-box-kaf {
-    background-color:rgba(6, 150, 160, 0.548);
+    background-color: rgba(6, 150, 160, 0.548);
     margin-left: auto;
     margin-right: auto;
-    height: 28vw;
-    width: 28vw;
+    height: 35vw;
+    width: 60vw;
     border-radius: 5vw;
     border: rgb(30, 30, 230) solid 0.5vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20;
 }
+
 
 /*stil för värdena från tempsensorn*/
-#temp1{
+
+#temp1 {
     margin-top: 0vw;
     text-align: center;
     font-style: normal;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: bold;
 }
 
-
-#humidity1{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-#temp2{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-
-#humidity2{
+#humidity1 {
     margin-top: 0vw;
     text-align: center;
     font-style: normal;
@@ -175,130 +167,50 @@ p{
     font-weight: bold;
 }
 
-#temp3{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 5vw;
-    font-weight: bold;
-}
 
+/*storlek och placering för alla grafer till varje rum*/
 
-#humidity3{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-#temp4{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-
-#humidity4{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-#temp5{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-#humidity5{
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-  /*storlek och placering för alla grafer till varje rum*/
-  #container1{
+#container1 {
     margin-top: 600px;
     margin-left: auto;
     margin-right: auto;
-    height: 600px; 
-    width: 90vw; 
+    height: 600px;
+    width: 90vw;
     position: relative;
     z-index: 1;
     margin-bottom: 0px;
-  }
-  #container2{
-    margin-top: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px; 
-    width: 90vw; 
-    position: relative;
-    z-index: 1;
-  }
-  #container3{
-    margin-top: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px; 
-    width: 90vw; 
-    position: relative;
-    z-index: 1;
-  }
-  #container4{
-    margin-top: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px; 
-    width: 90vw; 
-    position: relative;
-    z-index: 1;
-  }
-  #container5{
-    margin-top: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px; 
-    width: 90vw; 
-    position: relative;
-    z-index: 1;
-  }
+}
 
-  #con-container {
+#con-container {
     background-color: white;
-    width: 98,5vw;
+    width: 98, 5vw;
     height: 600px;
     position: relative;
     z-index: -20;
-  }
+}
 
-  #cont {
-      margin-left: auto;
-      margin-right: auto;
+#cont {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  }
 
-  /*gör att om browsern är mindre 1500px så är margin left 8vw*/
-  @media screen and (max-width: 1500px) {
-      a {
-          margin-left: 8vw;
-      }
-  }
-  /*beteende på scrollknappen*/
-  html {
+/*gör att om browsern är mindre 1500px så är margin left 8vw*/
+
+@media screen and (max-width: 1500px) {
+    a {
+        margin-left: 8vw;
+    }
+}
+
+
+/*beteende på scrollknappen*/
+
+html {
     scroll-behavior: smooth;
-  }
+}
 
-  #uppButton {
+#uppButton {
     font-size: 18px;
     border: none;
     color: white;
@@ -308,111 +220,39 @@ p{
     height: 1.5vw;
     width: 1.5vw;
     background-color: rgb(29, 58, 138, 0.9);
-  }
-  
-  #uppButton:hover {
-    background-color: lightblue;
-  }
+}
 
-  #section2{
-    
-    z-index:2;
+#uppButton:hover {
+    background-color: lightblue;
+}
+
+#section2 {
+    z-index: 2;
     margin-bottom: 0vw;
     margin-top: 59vw;
     position: absolute;
     margin-left: 80vw;
 }
-  
-/*stil för Knappar till graferna*/  
-#downButton{
+
+
+/*stil för Knappar till graferna*/
+
+#downButton {
     font-size: 1vw;
     border: none;
     outline: none;
-    background-color:rgb(131, 110, 72, 0.9);
+    background-color: rgb(29, 58, 138, 0.9);
     color: white;
     cursor: pointer;
     padding: 1.3vw;
     border-radius: 1.5vw;
     margin-left: 90vw;
-
 }
 
 #downButton:hover {
-    background-color:burlywood;
+    background-color: burlywood;
 }
 
-
-#downButton2{
-    font-size: 1vw;
-    border: none;
-    outline: none;
-    background-color:rgb(101, 131, 72, 0.9);
-    color: white;
-    cursor: pointer;
-    padding: 1.3vw;
-    border-radius: 1.5vw;
-    margin-left: 90vw;
-    margin-top: 0vw;
-    
-}
-#downButton2:hover{
-    background: rgba(188, 241, 137, 0.9);
-}
-
-
-#downButton3{
-    font-size: 1vw;
-    border: none;
-    outline: none;
-    background-color:rgb(29, 58, 138, 0.726);
-    color: white;
-    cursor: pointer;
-    padding: 1.3vw;
-    border-radius: 1.5vw;
-    margin-left: 90vw;
-    
-}
-
-#downButton3:hover{
-    background-color: lightskyblue;
-}
-
-
-#downButton4{
-    font-size: 1vw;
-    border: none;
-    outline: none;
-    background-color:rgb(23, 136, 42, 0.915);
-    color: white;
-    cursor: pointer;
-    padding: 1.3vw;
-    border-radius: 1.5vw;
-    margin-left: 90vw;
-    margin-top: 0;
-    
-}
-
-#downButton4:hover{
-    background-color: rgb(43, 192, 68);
-}
-
-#downButton5{
-    font-size: 1vw;
-    border: none;
-    outline: none;
-    background-color:rgb(245, 157, 86, 0.9);
-    color: white;
-    cursor: pointer;
-    padding: 1.3vw;
-    border-radius: 1.5vw;
-    margin-left: 90vw;
-}
-
-#downButton5:hover{
-    background-color: rgb(236, 212, 167);
-}
-
-#section1{
+#section1 {
     margin-top: 2vw;
 }
-
