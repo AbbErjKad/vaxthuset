@@ -9,48 +9,6 @@ body {
 }
 
 
-/*menyn för alla rum*/
-
-.menu-klass {
-    background-color: rgba(131, 110, 72, 0.9);
-    height: 3vw;
-    padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 3vw;
-}
-
-.menu-ter {
-    background-color: rgba(101, 131, 72, 0.95);
-    height: 3vw;
-    padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 3vw;
-}
-
-.menu-vard {
-    background-color: rgba(23, 136, 42, 0.815);
-    height: 3vw;
-    padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 3vw;
-}
-
-.menu-bibl {
-    background-color: rgba(245, 157, 86, 0.733);
-    height: 3vw;
-    padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 3vw;
-}
-
-.menu-kaf {
-    background-color: rgba(29, 58, 138, 0.726);
-    height: 3vw;
-    padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 35vw;
-}
-
 
 /*stilar för text i menyn*/
 
@@ -65,82 +23,68 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a:hover {
-    color: gray;
-}
 
 
-/*stilar för rubriker i boxen*/
-
-h1 {
-    text-align: center;
-}
-
-
-/*stilar för värdena i boxen*/
-
-p {
-    font-size: 1.5vw;
-    font-family: times;
-}
-
+/*stilar för rubriker i boxen*
 
 /*stilar för boxen för varje rum*/
 
 .white-box-kaf {
-    background-color: rgba(6, 150, 160, 0.548);
-    margin-left: auto;
-    margin-right: auto;
-    height: 35vw;
-    width: 60vw;
-    border-radius: 5vw;
-    border: rgb(30, 30, 230) solid 0.5vw;
-    margin-top: 1vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20;
+    position: absolute;
+    background-color: #121212;
+    margin-left: 24vw;
+    margin-top: 0vw;
+    height: 20vw;
+    width: 25vw;
+    border-radius: 1vw;
 }
 
 #tempcont {
-    height: fit-content;
     position: absolute;
-    margin-left: 560px;
-    margin-top: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vw;
+    color: rgb(96, 96, 96);
+    margin-left: 1vw;
+
+
+}
+
+#temp1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    margin-left: 7vw;
+
+}
+
+.box-humid {
+    position: relative;
+    background-color: #121212;
+    margin-left: 51vw;
+    height: 20vw;
+    width: 25vw;
+    border-radius: 1vw;
+
+
 }
 
 #humcont {
-    height: fit-content;
     position: absolute;
-    margin-left: 90px;
-    margin-top: 120px;
-}
-
-#line {
-    border-radius: 5px;
-    width: 5px;
-    height: 530px;
-    position: absolute;
-    background-color: rgb(30, 30, 230);
-    border: rgb(30, 30, 230) solid 0.5vw;
-    margin-left: 28%;
-}
-
-
-/*stil för värdena från tempsensorn*/
-
-#temp1 {
-    margin-top: 0vw;
-    text-align: center;
-    font-style: normal;
-    font-size: 6vw;
-    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vw;
+    color: rgb(96, 96, 96);
+    margin-left: 1vw;
+    margin-top: 1vw;
 }
 
 #humidity1 {
-    margin-top: 0vw;
+    position: absolute;
+    color: white;
     text-align: center;
-    font-style: normal;
-    font-size: 6vw;
-    font-weight: bold;
+    font-size: 5vw;
+    margin-top: 7vw;
+    margin-left: 7vw;
 }
 
 
@@ -182,53 +126,68 @@ p {
 
 /*beteende på scrollknappen*/
 
-html {
-    scroll-behavior: smooth;
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #121212;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-#uppButton {
-    font-size: 18px;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#sideButton {
+
+    color: #f1f1f1;
+    margin-left: 94vw;
+
+}
+
+#topNav {
+    background-color: #121212;
+}
+
+#propell {
+    position: absolute;
+    font-size: 10px;
     border: none;
     color: white;
     cursor: pointer;
     padding: 1.5vw;
     border-radius: 2vw;
-    height: 1.5vw;
-    width: 1.5vw;
+    height: 50px;
+    width: 5vw;
     background-color: rgb(29, 58, 138, 0.9);
+    margin-left: 100px;
+    margin-bottom: 1000px;
 }
 
-#uppButton:hover {
+#propell:hover {
     background-color: lightblue;
-}
-
-#section2 {
-    z-index: 2;
-    margin-bottom: 0vw;
-    margin-top: 59vw;
-    position: absolute;
-    margin-left: 80vw;
-}
-
-
-/*stil för Knappar till graferna*/
-
-#downButton {
-    font-size: 1vw;
-    border: none;
-    outline: none;
-    background-color: rgb(29, 58, 138, 0.9);
-    color: white;
-    cursor: pointer;
-    padding: 1.3vw;
-    border-radius: 1.5vw;
-    margin-left: 90vw;
-}
-
-#downButton:hover {
-    background-color: burlywood;
-}
-
-#section1 {
-    margin-top: 2vw;
 }

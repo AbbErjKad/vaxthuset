@@ -9,43 +9,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperatur sensor</title>
     <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="temp.js">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
-<body style="background-image: url(https://cutewallpaper.org/21/anime-school-classroom/Anime-School-Lunchroom-Wallpapers-Wallpaper-Cave.jpg); height: 600px;">
+<body style="background-color: rgb(0, 0, 0); height: 600px;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 
+    <div id="topNav">
 
-    <div id="section1"><a id="downButton" href="#con-container">Ner</a></div>
+        <span id="sideButton" style="font-size:3vw;cursor:pointer;" onclick="openNav()">&#9776; </span>
+    </div>
 
-    <div class="white-box-kaf">
-
-        <div id="line">
-
+    <div style="margin-top:10px">
+        <div class="white-box-kaf">
+            <h1 id="tempcont">Temperatur:</h1>
+            <p id="temp1"></p>
         </div>
-        <div id="tempcont">
-            <div>
-                <h1>Temperatur</h1>
-            </div>
-            <div>
-                <p id="temp1"></p>
-            </div>
-        </div>
-        <div id="humcont">
-            <div>
-                <h1>Fuktighet</h1>
-            </div>
-            <div>
-                <p id="humidity1"></p>
-            </div>
+
+        <div class="box-humid">
+            <h1 id="humcont">Fuktighet:</h1>
+            <p id="humidity1"></p>
         </div>
     </div>
 
-
-
-    <div id="section2"><a id="uppButton" href="#cont">Upp</a></div>
-    <div id="con-container">
-        <div id="container1"></div>
+    <div>
+        <button onclick="writeUserData()" id="propell">Fan is ON</button>
     </div>
+
 
 
     <script src="temp.js"></script>
