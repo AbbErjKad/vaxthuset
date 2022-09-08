@@ -9,7 +9,6 @@ body {
 }
 
 
-
 /*stilar för text i menyn*/
 
 a {
@@ -22,7 +21,6 @@ a {
     font-size: 1.5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 
 /*stilar för rubriker i boxen*
@@ -45,8 +43,6 @@ a {
     font-size: 2vw;
     color: rgb(96, 96, 96);
     margin-left: 1vw;
-
-
 }
 
 #temp1 {
@@ -55,7 +51,6 @@ a {
     text-align: center;
     font-size: 5vw;
     margin-left: 7vw;
-
 }
 
 .box-humid {
@@ -65,8 +60,6 @@ a {
     height: 20vw;
     width: 25vw;
     border-radius: 1vw;
-
-
 }
 
 #humcont {
@@ -126,8 +119,6 @@ a {
 
 /*beteende på scrollknappen*/
 
-
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -163,31 +154,50 @@ a {
 }
 
 #sideButton {
-
     color: #f1f1f1;
     margin-left: 94vw;
-
 }
 
 #topNav {
     background-color: #121212;
+    height: 80px;
+}
+
+#mbappe {
+    position: absolute;
+    margin-left: 650px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 #propell {
     position: absolute;
-    font-size: 10px;
-    border: none;
+    background-color: #121212;
+    margin-left: 51vw;
+    margin-top: 10px;
+    height: 20vw;
+    width: 25vw;
+    border-radius: 1vw;
+    font-size: large;
     color: white;
-    cursor: pointer;
-    padding: 1.5vw;
-    border-radius: 2vw;
-    height: 50px;
-    width: 5vw;
-    background-color: rgb(29, 58, 138, 0.9);
-    margin-left: 100px;
-    margin-bottom: 1000px;
 }
 
 #propell:hover {
-    background-color: lightblue;
+    background-color: rgb(1, 187, 97);
+}
+
+#water {
+    position: relative;
+    background-color: #121212;
+    margin-left: 367px;
+    margin-top: 10px;
+    height: 20vw;
+    width: 25vw;
+    border-radius: 1vw;
+    font-size: large;
+    color: white;
+}
+
+#water:hover {
+    background-color: rgb(4, 162, 214);
 }
