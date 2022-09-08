@@ -87,54 +87,6 @@ p {
 
 /*stilar för boxen för varje rum*/
 
-.white-box-ter {
-    background-color: rgba(84, 173, 89, 0.86);
-    margin-left: auto;
-    margin-right: auto;
-    height: 28vw;
-    width: 28vw;
-    border-radius: 5vw;
-    border: green solid 0.5vw;
-    margin-top: 2vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.white-box-klass {
-    background-color: rgba(209, 202, 171, 0.836);
-    margin-left: auto;
-    margin-right: auto;
-    height: 28vw;
-    width: 28vw;
-    border-radius: 5vw;
-    border: rgb(131, 110, 72) solid 0.5vw;
-    margin-top: 2vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.white-box-vard {
-    background-color: rgba(255, 255, 255, 0.705);
-    margin-left: auto;
-    margin-right: auto;
-    height: 28vw;
-    width: 28vw;
-    border-radius: 5vw;
-    border: rgb(39, 190, 39) solid 0.5vw;
-    margin-top: 2vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.white-box-bibl {
-    background-color: rgba(255, 145, 56, 0.733);
-    margin-left: auto;
-    margin-right: auto;
-    height: 28vw;
-    width: 28vw;
-    border-radius: 5vw;
-    border: rgb(243, 89, 0) solid 0.5vw;
-    margin-top: 2vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 .white-box-kaf {
     background-color: rgba(6, 150, 160, 0.548);
     margin-left: auto;
@@ -148,6 +100,30 @@ p {
     font-size: 20;
 }
 
+#tempcont {
+    height: fit-content;
+    position: absolute;
+    margin-left: 560px;
+    margin-top: 120px;
+}
+
+#humcont {
+    height: fit-content;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 120px;
+}
+
+#line {
+    border-radius: 5px;
+    width: 5px;
+    height: 530px;
+    position: absolute;
+    background-color: rgb(30, 30, 230);
+    border: rgb(30, 30, 230) solid 0.5vw;
+    margin-left: 28%;
+}
+
 
 /*stil för värdena från tempsensorn*/
 
@@ -155,7 +131,7 @@ p {
     margin-top: 0vw;
     text-align: center;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -163,7 +139,7 @@ p {
     margin-top: 0vw;
     text-align: center;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: bold;
 }
 
