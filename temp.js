@@ -3,6 +3,10 @@
 let database = firebase.database()
 let temp1 = database.ref('temps/temp1')
 let humid1 = database.ref('humidity/humidity1')
+let propell = database.ref('power/power')
+let water1 = database.ref('water/water')
+let power = false
+let water = false
 
 //funktion med properties och methods för att hämta värden från firebase
 temp1.on('value', function(snapshot) {
@@ -14,12 +18,47 @@ humid1.on('value', function(snapshot) {
     updateHumid1(snapshot.val())
 })
 
+propell.on('value', function(snapshot) {
+    updatePropell(snapshot.val())
+})
+
+water1.on('value', function(snapshot) {
+    updateWater(snapshot.val())
+})
+
 //funktion för att uppdatera temperatur och avrunda till 1 decimal
 function updateTemp1(value) {
     let t = document.getElementById('temp1')
     if (t != null) {
         t.innerHTML = Math.round(value * 10) / 10 + ('°C')
     }
+    console.log(value)
+    if (value > 22.5) {
+        power = true
+        firebase.database().ref('power').set({
+            power: power
+        })
+    }
+}
+
+function updatePropell(value) {
+    console.log("checking power")
+    if (value == true) {
+        document.getElementById('propell').innerHTML = "Fan is ON"
+    } else if (value == false) {
+        document.getElementById('propell').innerHTML = "Fan is OFF"
+    }
+
+}
+
+function updateWater(value) {
+    console.log("checking water")
+    if (value == true) {
+        document.getElementById('water').innerHTML = "Water is ON"
+    } else if (value == false) {
+        document.getElementById('water').innerHTML = "Water is OFF"
+    }
+
 }
 
 //funktion för att uppdatera fuktighet och avrunda till 1 decimal
@@ -28,6 +67,7 @@ function updateHumid1(value) {
     if (t != null) {
         t.innerHTML = Math.round(value * 10) / 10 + ('%')
     }
+
 }
 
 
@@ -40,8 +80,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0"
 }
 
-let power = false
-let water = false
+
 
 function writeUserData() {
     console.log(power)
